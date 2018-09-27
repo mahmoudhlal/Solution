@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/main_layout"
+    android:background="@color/colorLightYellow"
+    tools:context=".StartActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SELF"
+        android:textColor="@android:color/black"
+        android:textSize="30dp"
+        android:textAllCaps="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="345dp"
+
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/bottom_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Looking for self app ?"
+        android:textColor="@color/colorBlue"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginBottom="15dp"
+
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@id/bottom_txt"
+        android:orientation="horizontal"
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="5dp"
+        app:layout_goneMarginBottom="4dp"
+        >
+
+        <Button
+            android:background="@drawable/btn_signin_design"
+            android:textColor="@android:color/white"
+            android:id="@+id/btn_signin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Sign in"
+            android:layout_marginRight="5dp"
+            />
+
+        <Button
+            android:background="@drawable/btn_register_desigin"
+            android:textColor="@android:color/black"
+            android:id="@+id/btn_register"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="register"
+
+            />
+
+    </LinearLayout>
+
+
+
+</android.support.constraint.ConstraintLayout>

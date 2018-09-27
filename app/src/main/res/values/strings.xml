@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">MySolutionApp</string>
+    <string name="type">نوع الاستشارة</string>
+    <string name="desc">تفاصيل الطلب</string>
+    <string name="photo">صورة</string>
+    <string name="send">ارسال</string>
+    <string name="required">مطلوب</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+</resources>

@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        android:background="@color/colormerge"
+        >
+        <Button
+            android:layout_width="40dp"
+            android:id="@+id/BT_back"
+            android:layout_height="40dp"
+            android:background="@drawable/ic_back"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="23dp"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginTop="18dp"
+            >
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="65dp">
+                <RelativeLayout
+                    android:id="@+id/i"
+                    android:layout_marginLeft="55dp"
+                    android:layout_width="70dp"
+                    android:layout_height="65dp">
+
+                    <RelativeLayout
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:background="@drawable/round">
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            app:civ_border_width="1dp"
+                            app:civ_border_color="@color/colorPrimary"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/r"
+                            />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:padding="1dp"
+                        android:id="@+id/o"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:background="@drawable/round">
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            app:civ_border_width="1dp"
+                            app:civ_border_color="@color/colorPrimary"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/r"/>
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:padding="1dp"
+                    android:layout_marginStart="1dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_toEndOf="@+id/i"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:background="@drawable/round">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        app:civ_border_width="1dp"
+                        app:civ_border_color="@color/colorPrimary"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/r"/>
+
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_toEndOf="@id/i"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="User Name"
+                    android:textColor="@android:color/white"
+                    android:textSize="22dp"
+                    />
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="7dp"
+        android:background="@color/colorLightYellow"
+        />
+</LinearLayout>
